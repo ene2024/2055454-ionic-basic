@@ -1,0 +1,18 @@
+
+button{
+    background-color: rgb(237, 245, 5);
+    border-color:rgba(34, 0, 255, 0.629);
+    border: none;
+}
+
+body{
+    background-color: rgb(241, 241, 232);
+}
+
+
+
+@media screen and (max-width: 767px) {
+    button{
+        display:block;
+    }
+}
