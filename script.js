@@ -1,22 +1,29 @@
-var miVariable=5;
+var ArticuloTXT=document.getElementById(ArticuloTXT);
+var MontTXT=document.getElementById(MontTXT);
 
-var miTxt= document.getElementById("txt");
-var texto="";
+var Articulo='';
+var Monto=0;
+var Total=0;
 
-function miFuncion(){
-    texto = miTxt.value;
-    alert(texto);
+var seccionTicket=document.getElementById('ticket');
+var totalParrafo=document
+function agregar(){
+    Monto=parseInt(MontoTXT.value);
+
+    total=Total + Monto;
+
+    var nuevoElemento=document.createElement('p');
+    nuevoElemento.innerHTML=Articulo + '..........$' + Monto;
+
+    
+
+    seccionTicket.appendChild(nuevoElemento);
+    seccionTicket.insertBefore(nuevoElemento, totalParrafo);
+
+    limpiar();
+
 }
 
-function borrar(){
-    miTxt.value="";
+function limpiar(){
+    
 }
-
-
-function cambiarPagina(){
-    
-    const nuevoColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-    
-    document.body.style.backgroundColor = nuevoColor;
-    
-  }
