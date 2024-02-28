@@ -7,15 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-    <input type="text" id="txt">
-    <button onclick="miFuncion()"> CLICK </button>
-    <button onclick="borrar()"> Borrar</button>
-    <button onclick="cambiarPagina()"> Cambiar pagina</button>
-    </form>
+    <section id="compra">
+    <h1>Ticket de compra</h1>
+    <ion-input label="Articulo"></ion-input>
+    <ion-input label="Monto"></ion-input>
 
+    <ion-button> Agregar</ion-button>
+</section>
+<section id="ticket">
+    <h2>===Mi Ticket===</h2>
+    <h3>Total</h3>
+</section>
         <script src="script.js" ></script>
 </body>
-
-
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
 </html>
