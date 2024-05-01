@@ -15,3 +15,14 @@
 </ion-list>
 
 <ion-action-sheet trigger="Borrar" [buttons]="actionSheetButtons"></ion-action-sheet>
+
+<form #alumnosForm="ngForm" (ngSubmit)="agregaAlumno()">
+  <ion-label>Nombre alumno:</ion-label>
+  <ion-input required [(ngModel)]="alumno.nombre" placeholder="Ejemplo: Eduardo" name="nombre"></ion-input>
+  <ion-label>
+    <ion-checkbox [(ngilode1)]="alumo. presente" name="presente"></ion-checkbox> Presente
+  </ion-label>
+  <div>
+    <ion-button type="submit">Agregar</ion-button>
+    </div>
+</form>

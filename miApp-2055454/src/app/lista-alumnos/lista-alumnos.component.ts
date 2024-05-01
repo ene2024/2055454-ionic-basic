@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActionSheetController } from '@ionic/angular';
+import { alumno } from './alumno.model';
 @Component({
   selector: 'app-lista-alumnos',
   templateUrl: './lista-alumnos.component.html',
@@ -7,7 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaAlumnosComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private actionSheetCtrl: ActionSheetController) { }
+
+  result: string='';
+
+  agregaAlumno(): void {
+    this.alumnos.push(this.alumno);
+
+    this.alumno = {
+      nombre: '',
+      presente: false
+    }
+  }
+
+  alumno: alumno = {
+    nombre: '',
+      presente: false
+    }
+    
+
 
   ngOnInit() {}
 
@@ -37,5 +56,6 @@ export class ListaAlumnosComponent  implements OnInit {
       },
     },
   ];
-  
+
+ 
 }
